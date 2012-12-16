@@ -1,4 +1,23 @@
+/*
+ * This renders the background image and renders it as static
+ */
 body {
     background-attachment:      fixed;
     background-image:           url('resources/stainless-steel.jpg');
+}
+
+/*
+ * This renders the main page of the document as a semitransperant dark
+ * background
+ */
+.center-doc {
+    width:                      75%;
+    background-color:           black;
+    opacity:                    0.7;
+    margin-right:               auto;
+    margin-left:                auto;
+}
+
+p {
+    color:                      white;
 }
