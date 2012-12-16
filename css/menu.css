@@ -1,0 +1,25 @@
+/*
+ * Render the menu bar
+ */
+
+.main-menu {
+    width:                  75%;
+    margin-left:            auto;
+    margin-right:           auto;
+}
+
+.main-menu ol {
+    text-align:             center;
+    padding-top:            10px;
+    padding-bottom:         10px;
+}
+
+.main-menu a {
+
+}
+
+.main-menu li {
+    display:                inline;
+    padding-left:           30px;
+    padding-right:          30px;
+}
