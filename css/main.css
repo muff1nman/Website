@@ -9,6 +9,7 @@ body {
     background-repeat:          no-repeat;
     background-position:        left, right;
     background-color:           black;
+    color:                      gray;
 }
 
 /*
@@ -21,6 +22,10 @@ body {
     margin-left:                auto;
 }
 
+h1 {
+    font-family:                "Rockwell Extra Bold", "Rockwell Bold", monospace;
+    color:                      #52CC29;
+}
+
 p {
-    color:                      gray;
 }
