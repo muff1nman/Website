@@ -12,6 +12,9 @@ code.html : code.htm header.htm footer.htm
 photography.html : photography.htm header.htm footer.htm
 	cat header.htm photography.htm footer.htm > photography.html
 
+recent.html : recent.htm header.htm footer.htm
+	cat header.htm recent.htm footer.htm > recent.html
+
 clean : 
 	rm -f *.html
 
