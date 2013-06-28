@@ -1,4 +1,4 @@
-all: about.html index.html code.html photography.html
+all : about.html index.html code.html photography.html recent.html
 
 about.html : about.htm header.htm footer.htm
 	cat header.htm about.htm footer.htm > about.html
