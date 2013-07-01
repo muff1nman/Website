@@ -28,6 +28,6 @@ target/css: css
 clean : 
 	rm -rf target
 
-deploy : %.html
-	s3cmd sync --acl-public target/ s3://andrewdemaria.com
+deploy: 
+	s3cmd sync --rr --delete-removed --acl-public target/ s3://andrewdemaria.com
 
