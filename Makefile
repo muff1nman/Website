@@ -16,7 +16,9 @@ target/photography.html : photography.htm header.htm footer.htm
 	cat header.htm photography.htm footer.htm > target/photography.html
 
 target/recent.html : recent.htm header.htm footer.htm 
-	cat header.htm recent.htm footer.htm > target/recent.html
+	cat header.htm recent.htm > target/recent.html
+	kramdown recent.kramdown >> target/recent.html
+	cat footer.htm >> target/recent.html
 
 target/favicon.png : favicon.png 
 	cp favicon.png target/favicon.png

@@ -1,0 +1,17 @@
+2013.06.30
+--------
+
+Well, I have been meaning to create a blog for quite some time, if for no other
+reason than to document my swimming through life's turbulent waters.  I plan on
+keeping heavily to ranting on my new discoveries in technology and computing but
+occasionally I am sure you will find other remnants of my life such as recent
+pictures. 
+
+As far as the site goes, I plan on redesigning it as I have time.  Right now it
+looks awful, but then again I put it hastily. Also, I have decided that I enjoy using
+Amazon Web Services.  This site, for example, is hosted on an s3 bucket and
+deployed using a short but sweet Makefile script. Most of the work is actually
+done with a neat tool called [s3 tools](http://s3tools.org/s3cmd) and it seems
+perfect for deploying public assets such as a website.
+
+Now to see how well I keep up on posting frequently :)
