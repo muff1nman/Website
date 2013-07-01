@@ -1,3 +1,5 @@
 *.swp
 .fuse*
 *.swp
+libpeerconnection.log
+target
