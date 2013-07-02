@@ -1,4 +1,6 @@
-all : targetDir target/about.html target/index.html target/code.html target/photography.html target/recent.html target/css target/favicon.png
+all : buildSite
+
+buildSite: targetDir target/about.html target/index.html target/code.html target/photography.html target/recent.html target/css target/favicon.png
 
 targetDir:
 	mkdir -p target
@@ -15,7 +17,7 @@ target/code.html : code.htm header.htm footer.htm
 target/photography.html : photography.htm header.htm footer.htm 
 	cat header.htm photography.htm footer.htm > target/photography.html
 
-target/recent.html : recent.htm header.htm footer.htm 
+target/recent.html : recent.htm header.htm footer.htm recent.kramdown
 	cat header.htm recent.htm > target/recent.html
 	kramdown recent.kramdown >> target/recent.html
 	cat footer.htm >> target/recent.html
@@ -30,6 +32,6 @@ target/css: css
 clean : 
 	rm -rf target
 
-deploy: 
+deploy: buildSite
 	s3cmd sync --rr --delete-removed --acl-public target/ s3://andrewdemaria.com
 
