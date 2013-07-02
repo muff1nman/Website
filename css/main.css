@@ -5,7 +5,7 @@
  */
 body {
     background-attachment:      fixed;
-    background-image:           url('resources/stainless-steel-fade-left-tint.jpg'), url('resources/stainless-steel-fade-right-tint.jpg');
+    background-image:           url('../resources/stainless-steel-fade-left-tint.jpg'), url('../resources/stainless-steel-fade-right-tint.jpg');
     background-repeat:          no-repeat;
     background-position:        left, right;
     background-color:           black;
@@ -38,5 +38,5 @@ h3 {
 }
 
 p {
-  font-family:                  sans-serif;
+  font-family:                  sans-serif;  
 }

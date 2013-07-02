@@ -1,6 +1,6 @@
 all : buildSite
 
-buildSite: targetDir target/about.html target/index.html target/code.html target/photography.html target/recent.html target/css target/favicon.png
+buildSite: targetDir target/about.html target/index.html target/code.html target/photography.html target/recent.html target/css target/resources target/favicon.png
 
 targetDir:
 	mkdir -p target
@@ -29,9 +29,14 @@ target/css: css
 	rm -rf target/css
 	cp -r css target
 
+target/resources: resources
+	rm -rf target/resources
+	cp -r resources target
+
 clean : 
 	rm -rf target
 
 deploy: buildSite
-	s3cmd sync --rr --delete-removed --acl-public target/ s3://andrewdemaria.com
+	s3cmd sync -M --rr --delete-removed --exclude="target/css/*" --acl-public target/ s3://andrewdemaria.com/
+	s3cmd sync -M --rr --delete-removed --acl-public --mime-type="text/css" target/css/ s3://andrewdemaria.com/css/
 
