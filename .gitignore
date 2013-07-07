@@ -5,3 +5,4 @@ libpeerconnection.log
 target
 recent.kramdown
 nohup.out
+*.xcf

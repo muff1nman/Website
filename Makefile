@@ -40,6 +40,6 @@ test:
 	nohup firefox target/index.html & > /dev/null
 
 deploy: buildSite
-	s3cmd sync -M --rr --delete-removed --exclude="target/css/*" --acl-public target/ s3://andrewdemaria.com/
-	s3cmd sync -M --rr --delete-removed --acl-public --mime-type="text/css" target/css/ s3://andrewdemaria.com/css/
+	s3cmd sync -M --rr --delete-removed --exclude-from=".gitignore" --exclude=".gitignore" --acl-public target/ s3://andrewdemaria.com/
+	s3cmd sync -M --rr --delete-removed  --exclude-from=".gitignore" --exclude=".gitignore" --acl-public --mime-type="text/css" target/css/ s3://andrewdemaria.com/css/
 
