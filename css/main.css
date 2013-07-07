@@ -5,11 +5,36 @@
  */
 body {
     background-attachment:      fixed;
-    background-image:           url('../resources/stainless-steel-fade-left-tint.jpg'), url('../resources/stainless-steel-fade-right-tint.jpg');
+    background-image:           url('../resources/lightning.jpg');
     background-repeat:          no-repeat;
-    background-position:        left, right;
-    background-color:           black;
-    color:                      #E3E3E3;
+		background-position:        center center;
+		background-color:           black;
+		-webkit-background-size:    cover;
+		-moz-background-size:       cover;
+		-o-background-size:         cover;
+		background-size:						cover;
+		color:                      #E3E3E3;
+		padding: 0;
+		margin: 0;
+}
+
+.main-container {
+    width:                      75%;
+		background-color:           #B5C1C4;
+		background-color:           rgba(181,193,196,0.2);
+    margin-right:               auto;
+    margin-left:                auto;
+		margin-top: 0;
+		margin-bottom: 0;
+		padding:  20px;
+		-moz-border-bottom-right-radius: 20px;
+		-webkit-border-bottom-right-radius: 20px;
+		-khtml-border-bottom-right-radius: 20px;
+		border-bottom-right-radius: 20px;
+		-moz-border-bottom-left-radius: 20px;
+		-webkit-border-bottom-left-radius: 20px;
+		-khtml-border-bottom-left-radius: 20px;
+		border-bottom-left-radius: 20px;
 }
 
 /*
@@ -17,9 +42,6 @@ body {
  * background
  */
 .center-doc {
-    width:                      75%;
-    margin-right:               auto;
-    margin-left:                auto;
 }
 
 h1 {
