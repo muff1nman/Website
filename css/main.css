@@ -18,10 +18,14 @@ body {
 		margin: 0;
 }
 
+/*
+ * This renders the main page of the document as a semitransperant dark
+ * background
+ */
 .main-container {
     width:                      75%;
-		background-color:           #B5C1C4;
-		background-color:           rgba(181,193,196,0.2);
+		background-color:           #1C1C1C;
+		background-color:           rgba(28,28,28,0.6);
     margin-right:               auto;
     margin-left:                auto;
 		margin-top: 0;
@@ -37,10 +41,6 @@ body {
 		border-bottom-left-radius: 20px;
 }
 
-/*
- * This renders the main page of the document as a semitransperant dark
- * background
- */
 .center-doc {
 }
 
@@ -61,4 +61,15 @@ h3 {
 
 p {
   font-family:                  sans-serif;  
+}
+
+a:link, a:visited {
+	text-decoration:  none;
+	color:  #8DBA93;
+}
+
+a:hover, a:active {
+	text-dectoration: none;
+	background-color: #8DBA93;
+	color: black;
 }

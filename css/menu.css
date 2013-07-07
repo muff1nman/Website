@@ -3,15 +3,14 @@
  */
 
 .main-menu {
-    width:                  75%;
-    margin-left:            auto;
-    margin-right:           auto;
 }
 
 .main-menu ol {
     text-align:             center;
-    padding-top:            10px;
-    padding-bottom:         10px;
+    padding-top:            1em;
+    padding-bottom:         1em;
+		padding-left: 3px;
+		padding-right: 3px;
 }
 
 .main-menu a {
@@ -20,6 +19,6 @@
 
 .main-menu li {
     display:                inline;
-    padding-left:           30px;
-    padding-right:          30px;
+    padding-left:           0em;
+    padding-right:          1.0em;
 }
