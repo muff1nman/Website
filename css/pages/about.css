@@ -1,0 +1,23 @@
+/*
+ * about.css
+ * Copyright (C) 2013 Andrew DeMaria (muff1nman)
+ *
+ * All Rights Reserved.
+ */
+
+.keys ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+.keys li {
+	margin-bottom: 1em;
+}
+
+.keys li h5 {
+	margin-top: 0px;
+	margin-bottom: 0.5em;
+	border-bottom: 1px solid white;
+}
+

@@ -1,6 +1,6 @@
 all : buildSite
 
-buildSite: targetDir target/about.html target/index.html target/code.html target/photography.html target/recent.html target/css target/resources target/favicon.png
+buildSite: targetDir target/about.html target/index.html target/code.html target/photography.html target/recent.html target/css target/resources target/downloads target/favicon.png
 
 targetDir:
 	mkdir -p target
@@ -25,13 +25,17 @@ target/recent.html : recent.htm header.htm footer.htm recent.kramdown
 target/favicon.png : favicon.png 
 	cp favicon.png target/favicon.png
 
-target/css: css
+target/css: css css/pages
 	rm -rf target/css
 	cp -r css target
 
 target/resources: resources
 	rm -rf target/resources
 	cp -r resources target
+
+target/downloads: downloads
+	rm -rf target/downloads
+	cp -r downloads target
 
 clean : 
 	rm -rf target
