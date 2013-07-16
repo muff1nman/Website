@@ -1,47 +1,38 @@
+MD = kramdown
+MD_ARGS = --coderay-line-numbers table
+
 all : buildSite
+
+target/%.html : header.htm footer.htm %.htm
+	@cat header.htm $*.htm > target/$*.html
+	@echo "" | cat - $*.kramdown 2>/dev/null | $(MD) $(MD_ARGS) >> target/$*.html
+	@cat footer.htm >> target/$*.html
 
 buildSite: targetDir target/about.html target/index.html target/code.html target/photography.html target/recent.html target/css target/resources target/downloads target/favicon.png
 
 targetDir:
-	mkdir -p target
-
-target/about.html : about.htm header.htm footer.htm 
-	cat header.htm about.htm footer.htm > target/about.html
-
-target/index.html : index.htm header.htm footer.htm 
-	cat header.htm index.htm footer.htm > target/index.html
-
-target/code.html : code.htm header.htm footer.htm 
-	cat header.htm code.htm footer.htm > target/code.html
-
-target/photography.html : photography.htm header.htm footer.htm 
-	cat header.htm photography.htm footer.htm > target/photography.html
-
-target/recent.html : recent.htm header.htm footer.htm recent.kramdown
-	cat header.htm recent.htm > target/recent.html
-	kramdown recent.kramdown >> target/recent.html
-	cat footer.htm >> target/recent.html
+	@mkdir -p target
 
 target/favicon.png : favicon.png 
-	cp favicon.png target/favicon.png
+	@cp favicon.png target/favicon.png
 
 target/css: css css/pages
-	rm -rf target/css
-	cp -r css target
+	@rm -rf target/css
+	@cp -r css target
 
 target/resources: resources
-	rm -rf target/resources
-	cp -r resources target
+	@rm -rf target/resources
+	@cp -r resources target
 
 target/downloads: downloads
-	rm -rf target/downloads
-	cp -r downloads target
+	@rm -rf target/downloads
+	@cp -r downloads target
 
 clean : 
-	rm -rf target
+	@rm -rf target
 
 test:
-	nohup firefox target/index.html & > /dev/null
+	@nohup firefox target/index.html & > /dev/null
 
 deploy: buildSite
 	s3cmd sync -M  --delete-removed  --exclude-from=".gitignore" --exclude=".gitignore" --acl-public --mime-type="text/css" target/css/ s3://andrewdemaria.com/css/
