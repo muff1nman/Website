@@ -3,6 +3,6 @@
 *.swp
 libpeerconnection.log
 target
-recent.kramdown
+recent.md
 nohup.out
 *.xcf

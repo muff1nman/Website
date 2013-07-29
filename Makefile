@@ -5,7 +5,7 @@ all : buildSite
 
 target/%.html : header.htm footer.htm %.htm
 	@cat header.htm $*.htm > target/$*.html
-	@echo "" | cat - $*.kramdown 2>/dev/null | $(MD) $(MD_ARGS) >> target/$*.html
+	@echo "" | cat - $*.md 2>/dev/null | $(MD) $(MD_ARGS) >> target/$*.html
 	@cat footer.htm >> target/$*.html
 
 buildSite: targetDir target/about.html target/index.html target/code.html target/photography.html target/recent.html target/css target/resources target/downloads target/favicon.png
