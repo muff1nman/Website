@@ -10,6 +10,10 @@
 	border: 1px solid black;
 }
 
+.CodeRay .line-numbers {
+	margin-right: 0.6em;
+}
+
 .CodeRay pre {
 	margin: 0;
 }

@@ -15,7 +15,7 @@ body {
 		-moz-background-size:       cover;
 		-o-background-size:         cover;
 		background-size:						cover;
-		color:                      #E3E3E3;
+		color: #C2C0C0;
 		padding: 0;
 		margin: 0;
 }
@@ -27,7 +27,7 @@ body {
 .main-container {
     width:                      75%;
 		background-color:           #1C1C1C;
-		background-color:           rgba(28,28,28,0.6); 
+		background-color:           rgba(28,28,28,0.8); 
     margin-right:               auto;
     margin-left:                auto;
 		margin-top: 0;
@@ -63,6 +63,7 @@ h3 {
 
 p {
   font-family:                  sans-serif;  
+	text-shadow: 0 1px 2px #111112;
 }
 
 a:link, a:visited {
