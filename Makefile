@@ -1,11 +1,11 @@
 MD = kramdown
-MD_ARGS = --coderay-line-numbers table
-
+MD_ARGS =  --coderay-css class
+ #--coderay-line-numbers div
 all : buildSite
 
 target/%.html : header.htm footer.htm %.htm
 	@cat header.htm $*.htm > target/$*.html
-	@echo "" | cat - $*.md 2>/dev/null | $(MD) $(MD_ARGS) >> target/$*.html
+	echo "" | cat - $*.md 2>/dev/null | $(MD) $(MD_ARGS) >> target/$*.html
 	@cat footer.htm >> target/$*.html
 
 buildSite: targetDir target/about.html target/index.html target/code.html target/photography.html target/recent.html target/css target/resources target/downloads target/favicon.png

@@ -1,0 +1,43 @@
+/*
+ * code.css
+ * Copyright (C) 2013 Andrew DeMaria (muff1nman)
+ *
+ * All Rights Reserved.
+ */
+
+.CodeRay {
+	/*font-family: 'Courier New', 'Terminal', monospace;*/
+	border: 1px solid black;
+}
+
+.CodeRay pre {
+	margin: 0;
+}
+
+.CodeRay .code > pre {
+	background: none repeat scroll 0 0 #232323;
+	color: #E6E0DB;
+	overflow: auto;
+}
+
+
+/*.CodeRay .an { color:#E7BE69 }                      [> html attribute <]*/
+.CodeRay .doctype  { color:#5C4A31; font-style: italic; } /* comment */
+.CodeRay .comment  { color:#BC9358; font-style: italic; } /* comment */
+/*.CodeRay .character { color:#509E4F }                      [> escaped character <]*/
+.CodeRay .class { color:#FFF }                         /* class */
+.CodeRay .constant { color:#FFF }                         /* constant */
+.CodeRay .predefined-constant { color:#624087 }
+.CodeRay .float { color:#A4C260 }                      /* float */
+.CodeRay .function { color:#FFC56D }                      /* function */
+/*.CodeRay .gv { color:#D0CFFE }                      [> global variable <]*/
+.CodeRay .integer  { color:#A4C260 }                      /* integer */
+/*.CodeRay .il { background:#151515 }                 [> inline code <]*/
+/*.CodeRay .iv { color:#D0CFFE }                      [> instance variable <]*/
+/*.CodeRay .pp { color:#E7BE69 }                      [> doctype <]*/
+.CodeRay .keyword  { color:#CB7832 }                      /* keyword */
+/*.CodeRay .rx { color:#A4C260 }                      [> regex <]*/
+.CodeRay .string  { color:#A4C260 }                      /* string */
+.CodeRay .symbol { color:#6C9CBD }                      /* symbol */
+/*.CodeRay .ta { color:#E7BE69 }                      [> html tag <]*/
+/*.CodeRay .pc { color:#6C9CBD }                      [> boolean <]*/
