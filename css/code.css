@@ -30,6 +30,12 @@
 	overflow: auto;
 }
 
+button.CodeRayNumberToggle {
+    display: block;
+    margin-bottom: 3px;
+    margin-left: auto;
+    margin-right: 0;
+}
 
 /*.CodeRay .an { color:#E7BE69 }                      [> html attribute <]*/
 .CodeRay .doctype  { color:#5C4A31; font-style: italic; } /* comment */
