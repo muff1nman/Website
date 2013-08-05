@@ -3,6 +3,5 @@
 *.swp
 libpeerconnection.log
 target
-recent.md
 nohup.out
 *.xcf
