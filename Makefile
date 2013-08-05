@@ -4,7 +4,6 @@ MD_ARGS =  --coderay-css class
 all : buildSite
 
 target/%.html : header.htm footer.htm %.htm
-	`which coderay` || exit 1 # you need coderay for code coloring!
 	@cat header.htm $*.htm > target/$*.html
 	echo "" | cat - $*.md 2>/dev/null | $(MD) $(MD_ARGS) >> target/$*.html
 	@cat footer.htm >> target/$*.html
