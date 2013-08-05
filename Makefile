@@ -8,7 +8,7 @@ target/%.html : header.htm footer.htm %.htm
 	echo "" | cat - $*.md 2>/dev/null | $(MD) $(MD_ARGS) >> target/$*.html
 	@cat footer.htm >> target/$*.html
 
-buildSite: targetDir target/about.html target/index.html target/code.html target/photography.html target/recent.html target/css target/resources target/downloads target/favicon.png
+buildSite: targetDir target/about.html target/index.html target/code.html target/photography.html target/recent.html target/css target/js target/resources target/downloads target/favicon.png
 
 targetDir:
 	@mkdir -p target
@@ -19,6 +19,10 @@ target/favicon.png : favicon.png
 target/css: css css/pages
 	@rm -rf target/css
 	@cp -r css target
+
+target/js: js
+	@rm -rf target/js
+	@cp -r js target
 
 target/resources: resources
 	@rm -rf target/resources
