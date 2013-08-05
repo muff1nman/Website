@@ -35,7 +35,7 @@ target/downloads: downloads
 clean : 
 	@rm -rf target
 
-test:
+test: buildSite
 	@nohup firefox target/index.html & > /dev/null
 
 deploy: buildSite
