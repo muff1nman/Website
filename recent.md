@@ -1,7 +1,8 @@
 2013.09.05
 --------
-As promised here are the instructions for setting up JavaScript Lint *Note these
-instructions apply for version 0.3.0*. 
+As promised here are the instructions for setting up JavaScript Lint 
+
+*Note these instructions apply for version 0.3.0*. 
 
 First you will need to setup [eclim](http://eclim.org/index.html). Eclim is a
 layer of software that lets you interact with eclipse in vim, or conversely, use
@@ -29,8 +30,8 @@ make -f Makefile.ref
 At this point I was hesitant to run a `make install` and in fact, I did not even
 see a target in the Makefile.  Instead what I opted to do was to drop the
 executable inside my `/opt` directory. The excutables are stored in a generated
-directory named `Linux_All_OPT.OBJ` or `Linux_All_DBG.OBJ` if you did not set
-`BUILD_OPT`.  I then copied this directories contents to my `/opt` directory.
+directory named `Linux_All_OPT.OBJ` (or `Linux_All_DBG.OBJ` if you did not set
+`BUILD_OPT`).  I then copied this directory's contents to my `/opt` directory.
 
 ~~~ bash
 sudo mkdir /opt/jsl-0.3.0
