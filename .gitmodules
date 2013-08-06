@@ -1,0 +1,3 @@
+[submodule "resources/processing_loading"]
+	path = resources/processing_loading
+	url = git@github.com:muff1nman/processing_loading.git
