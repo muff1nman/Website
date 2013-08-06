@@ -5,3 +5,5 @@ libpeerconnection.log
 target
 nohup.out
 *.xcf
+build
+.gradle

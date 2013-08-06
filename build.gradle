@@ -1,0 +1,18 @@
+apply plugin: "base"
+
+defaultTasks 'buildSite'
+
+task buildHtml(type: Copy) {
+	logger.info "Copying html"
+	from 'site/html'
+	rename(/(.+\.)htm/, '$1html')
+	into "$buildDir/html"
+}
+
+task buildSite {
+	logger.info "Building Site"
+	dependsOn buildHtml
+}
+
+
+
