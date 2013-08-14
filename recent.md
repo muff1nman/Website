@@ -1,4 +1,4 @@
-2013.09.05
+2013.08.05
 --------
 As promised here are the instructions for setting up JavaScript Lint 
 
@@ -44,7 +44,7 @@ automatically do the rest at this point provided it can find the executable.  `w
 is your friend here.
 
 
-2013.09.04
+2013.08.04
 --------
 Just a short one today...
 
@@ -73,7 +73,7 @@ a bit more updated.
 Tomorrow I\'ll hopefully have the installation instructions up for \*Nix
 machines.
 
-2013.08.28
+2013.07.28
 --------
 
 So I have been working on this awesome new project of mine called bitmarket.
