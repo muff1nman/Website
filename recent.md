@@ -1,6 +1,7 @@
 2013.09.08
-(religion, catholicism, beggars)
 ------------
+
+#### (religion, catholicism, beggars)
 
 We've all been there.  You've pulled up the streetlight and standing at the
 corner is a scruffy looking man (I've hardly seen women), with dirty clothes and
@@ -115,6 +116,9 @@ this department.
 
 2013.08.25
 --------
+
+#### (arch, linux, cmake)
+
 Arch Linux.  I have been spending quite a bit of time tweaking my arch linux
 install just the way I like it and it has been quite the process.  However, I
 like to focus not on Arch (maybe another day..), but more on one of the
@@ -173,8 +177,9 @@ Oh, and it has nice colored terminal output with progress indicators, just to
 put the cherry on top.
 
 2013.08.05
-(javascript, lint, vim, tech)
 --------
+
+#### (javascript, lint, vim, tech)
 As promised here are the instructions for setting up JavaScript Lint 
 
 *Note these instructions apply for version 0.3.0*. 
@@ -221,7 +226,8 @@ is your friend here.
 
 2013.08.04
 --------
-(javascript, lint)
+
+#### (javascript, lint)
 Just a short one today...
 
 Javascript is an interesting language.  It combines the syntax structure of C,
@@ -250,8 +256,9 @@ Tomorrow I\'ll hopefully have the installation instructions up for \*Nix
 machines.
 
 2013.07.28
-(bitmarket, ruby)
 --------
+
+#### (bitmarket, ruby)
 
 So I have been working on this awesome new project of mine called bitmarket.
 It\'s a cool library that lets you automate bitcoin trading (and perhaps other
@@ -343,8 +350,9 @@ traders?  You never know...
 
 
 2013.07.01 
-(music, lastfm, banshee)
 --------
+
+#### (music, lastfm, banshee)
 
 I just found one of the coolest things that I wish I would have found years ago!
 You know when you get those songs from random places; friends, cds, shady places
@@ -359,8 +367,9 @@ with, it worked perfectly and was able to find the correct artist, ablum and
 title in addition to the other good info.  Neato!
 
 2013.06.30
-(blog, make, website)
 --------
+
+#### (blog, make, website)
 
 Well, I have been meaning to create a blog for quite some time, if for no other
 reason than to document my swimming through life\'s turbulent waters.  I plan on
