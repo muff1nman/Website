@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Better-Blogging-With-Jekyll"
+title: "Better Blogging With Jekyll"
 date: 2013-11-04
 tags: jekyll blog
 ---
