@@ -5,8 +5,6 @@ date:   2013-07-28
 tags: bitmarket ruby
 ---
 
-#### (bitmarket, ruby)
-
 So I have been working on this awesome new project of mine called bitmarket.
 It\'s a cool library that lets you automate bitcoin trading (and perhaps other
 currencies if I\'ve modularized it right..)  But at any rate the idea is that
