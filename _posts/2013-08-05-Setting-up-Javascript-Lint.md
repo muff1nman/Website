@@ -27,10 +27,10 @@ file that has some very rough instructions.  The README references `gmake` which
 according to the interwebs is essentially just `make` on modern day Linux
 machines.  At any rate, run:
 
-~~~ bash
+{% highlight bash %}
 export BUILD_OPT=1 # turns off debugging
 make -f Makefile.ref
-~~~
+{% endhighlight %}
 
 At this point I was hesitant to run a `make install` and in fact, I did not even
 see a target in the Makefile.  Instead what I opted to do was to drop the
@@ -38,10 +38,10 @@ executable inside my `/opt` directory. The excutables are stored in a generated
 directory named `Linux_All_OPT.OBJ` (or `Linux_All_DBG.OBJ` if you did not set
 `BUILD_OPT`).  I then copied this directory's contents to my `/opt` directory.
 
-~~~ bash
+{% highlight bash %}
 sudo mkdir /opt/jsl-0.3.0
 sudo cp Linux_All_OPT/* /opt/jsl-0.3.0
-~~~
+{% endhighlight %}
 
 Finally add the path to the executable to your `PATH` envirnonment variable.
 You now should be able to run `jsl` from the command line. The vim script will

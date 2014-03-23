@@ -43,6 +43,15 @@ body {
 		border-bottom-left-radius: 20px;
 }
 
+/*
+ * Additional code formatting.
+ */
+.highlight > pre {
+	overflow-x: auto;
+	width: 99%;
+}
+
+
 .center-doc {
 }
 

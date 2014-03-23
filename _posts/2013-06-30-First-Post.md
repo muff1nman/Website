@@ -20,7 +20,7 @@ perfect for deploying public assets such as a website.
 
 Here is what the Makefile looks like:
 
-~~~ Makefile
+{% highlight Makefile %}
 MD = kramdown
 MD_ARGS = --coderay-line-numbers table
 
@@ -60,7 +60,7 @@ test:
 deploy: buildSite
 	s3cmd sync -M  --delete-removed  --exclude-from=".gitignore" --exclude=".gitignore" --acl-public --mime-type="text/css" target/css/ s3://andrewdemaria.com/css/
 	s3cmd sync -M  --delete-removed --exclude-from=".gitignore" --exclude=".gitignore" --acl-public target/ s3://andrewdemaria.com/
-~~~
+{% endhighlight %}
 
 It\'s a bit hackish in some aspects. The one ugly line is line 8.  I wanted to
 have one target declaration for all the different pages.  The one page that is

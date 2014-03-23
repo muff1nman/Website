@@ -2,11 +2,15 @@ DEPLOY_DIR:=_site
 
 all : buildSite
 
-buildSite: 
+.PHONY: css
+css:
+	pygmentize -S default -f html > css/code.css
+
+buildSite: css
 	jekyll build
 
 .PHONY: test
-test:
+test: css
 	./test.sh
 
 clean : 

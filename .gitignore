@@ -1,9 +1,1 @@
-*.swp
-.fuse*
-*.swp
-libpeerconnection.log
-target
-nohup.out
-*.xcf
-_site
-jekyll.log
+css/code.css

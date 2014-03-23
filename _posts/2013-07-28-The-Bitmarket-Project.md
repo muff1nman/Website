@@ -21,7 +21,7 @@ Here is an example \'algorithm\'/demo program that I made the other day. The API
 is still a little off from being finalized as there are some tweaks I would
 like to do.
 
-~~~ ruby
+{% highlight ruby %}
 #! /usr/bin/env ruby
 #
 # Copyright © 2013 Andrew DeMaria (muff1nman) <ademaria@mines.edu>
@@ -76,7 +76,7 @@ sleep
 bit.stop_historian
 bit.stop_analyzing
 bit.stop_trading
-~~~
+{% endhighlight %}
 
 Eventually I would like to make a DSL (Domain Specific Language) for it so that
 it takes care of the setup and tear down process and so that the language for

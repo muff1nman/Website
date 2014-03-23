@@ -30,16 +30,16 @@ even deal with.
 
 For a basic example Makefile I might have to write:
 
-~~~ Make
+{% highlight Makefile %}
 hello: hello.cpp
 	g++ hello.cpp -o Hello
-~~~
+{% endhighlight %}
 
 A roughly equivalent CMakeLists.txt file:
 
-~~~ CMake
+{% highlight CMake %}
 add_executable(Hello hello.cpp)
-~~~
+{% endhighlight %}
 
 Can you see the difference?  One thing I would like to point out is that there
 is no mention of the compiler in CMake.  When cmake is run it will automatically

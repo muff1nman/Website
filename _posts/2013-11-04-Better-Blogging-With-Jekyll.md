@@ -9,7 +9,7 @@ starters, I have upgraded how the site is managed.  Remeber the [first
 post]({{site.baseurl}}{% post_url 2013-06-30-First-Post %}) I made with that
 giant makefile?  Well here is my new makefile:
 
-~~~ make
+{% highlight make %}
 DEPLOY_DIR:=_site
 
 all : buildSite
@@ -23,7 +23,7 @@ clean :
 deploy: buildSite
 	s3cmd sync -M  --delete-removed  --exclude-from=".gitignore" --exclude=".gitignore" --acl-public --mime-type="text/css" $(DEPLOY_DIR)/css/ s3://andrewdemaria.com/css/
 	s3cmd sync -M  --delete-removed --exclude-from=".gitignore" --exclude=".gitignore" --exclude=".gitmodules" --acl-public $(DEPLOY_DIR)/ s3://andrewdemaria.com/
-~~~
+{% endhighlight %}
 
 Quite a difference, don't you think?  As you may have noticed under the
 `buildSite` target, I am now using [jekyll](http://jekyllrb.com/) to build the
