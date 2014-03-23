@@ -5,6 +5,9 @@ all : buildSite
 buildSite: 
 	jekyll build
 
+testSite:
+	./test.sh
+
 clean : 
 	@rm -rf $(DEPLOY_DIR)
 

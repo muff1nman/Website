@@ -6,3 +6,4 @@ target
 nohup.out
 *.xcf
 _site
+jekyll.log
