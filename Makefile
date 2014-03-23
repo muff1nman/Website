@@ -5,7 +5,8 @@ all : buildSite
 buildSite: 
 	jekyll build
 
-testSite:
+.PHONY: test
+test:
 	./test.sh
 
 clean : 
