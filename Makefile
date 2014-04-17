@@ -4,7 +4,7 @@ all : buildSite
 
 .PHONY: css
 css:
-	pygmentize -S default -f html > css/code.css
+	pygmentize -S rrt -f html > css/code.css
 
 buildSite: css
 	jekyll build
