@@ -1,14 +1,3 @@
-/* Custom container */
-.container-narrow {
-  margin: 0 auto;
-  max-width: 700px; }
-
-.container-narrow > hr {
-  margin: 30px 0; }
-
-.navbar .nav {
-  float: right; }
-
 .page-header small.tagline {
 	display: block;
 	font-size: 18px;
@@ -37,14 +26,19 @@
 /* tag_box */
 .tag_box {
   list-style: none;
-  margin: 0;
+	margin: 0;
+	padding-left: 0px;
   overflow: hidden; }
 
 .tag_box li {
   line-height: 28px; }
 
-.tag_box li i {
-  opacity: 0.9; }
+
+ul.tag_box li.glyphicon.glyphicon-tags {
+	padding-right: 5px;
+	padding-top: 5px;
+	opacity: 0.9;
+}
 
 .tag_box.inline li {
   float: left; }
