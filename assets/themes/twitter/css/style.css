@@ -11,6 +11,8 @@
 
 .page-header small.tagline {
 	display: block;
+	font-size: 18px;
+	margin-top: 5px;
 }
 
 /* posts index */
