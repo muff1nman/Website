@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Home
+title: Lost on a Mountain
 tagline: A place for my ideas, code snippets and photography.
 ---
 {% include JB/setup %}
