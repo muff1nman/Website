@@ -1,3 +1,7 @@
-css/code.css
 _site/
 jekyll.log
+_theme_packages/
+!.gitkeep
+
+.rbenv-version
+.rvmrc
