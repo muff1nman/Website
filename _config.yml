@@ -83,7 +83,7 @@ JB :
   comments :
     provider : disqus
     disqus :
-      short_name : jekyllbootstrap
+      short_name : lostonamountain
     #livefyre :
       #site_id : 123
     #intensedebate :
