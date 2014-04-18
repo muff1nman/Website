@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Lost on a Mountain
-tagline: A blog by Andrew DeMaria for my ideas, code snippets and photography.
+tagline: A blog by Andrew DeMaria for thoughts, code snippets and photography.
 ---
 {% include JB/setup %}
 
