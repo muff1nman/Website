@@ -4,7 +4,7 @@ all : buildSite
 
 .PHONY: css
 css:
-	pygmentize -S rrt -f html > css/code.css
+	pygmentize -S autumn -f html > assets/themes/twitter/css/code.css
 
 buildSite: css
 	jekyll build
