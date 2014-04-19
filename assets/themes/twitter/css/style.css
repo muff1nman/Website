@@ -64,6 +64,24 @@ ul.tag_box li.glyphicon.glyphicon-tags {
   border: 1px solid #4c964d;
   color: #FFF; }
 
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #F5EBD8;
+}
+.navbar-header .navbar-toggle {
+    border-color: rgba(0, 0, 0, 0);
+}
+.navbar-header .navbar-toggle:hover, .navbar-header .navbar-toggle:focus {
+    background-color: rgba(0, 0, 0, 0);
+    border-color: rgba(0, 0, 0, 0);
+}
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+    color: #EBD6AF;
+}
+
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+	background-color:#372D24;
+}
+
 footer p {
 	text-align: center;
 }
