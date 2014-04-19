@@ -6,10 +6,8 @@
 # All Rights Reserved.
 #
 
-if [[ -e jekyll.log ]]; then
-	pkill jekyll
-	rm jekyll.log
-fi
+pkill jekyll
+rm jekyll.log
 
 nohup jekyll serve --drafts -w > jekyll.log &
 sleep 1
