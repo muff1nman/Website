@@ -10,6 +10,6 @@ pkill jekyll
 rm jekyll.log
 
 nohup jekyll serve --drafts -w > jekyll.log &
-sleep 1
+sleep 2
 grep -REiI 'Server address' jekyll.log
-
+exit 0
