@@ -27,7 +27,7 @@ stalled a bit. **Update 2013.09.05** Here is a
 [fork](https://github.com/davepacheco/javascriptlint) of the project that seems
 a bit more updated.
 
-![JSLint]({{ site.baseurl }}/resources/jslint_screen.png)
+![JSLint]({{ BASE_PATH }}/resources/jslint_screen.png)
 
 Tomorrow I\'ll hopefully have the installation instructions up for \*Nix
 machines.

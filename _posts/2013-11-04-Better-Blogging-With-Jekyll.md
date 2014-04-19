@@ -6,7 +6,7 @@ tags: jekyll blog
 ---
 I'll confess, school has been very busy and hence the prolonged update.  For
 starters, I have upgraded how the site is managed.  Remeber the [first
-post]({{site.baseurl}}{% post_url 2013-06-30-First-Post %}) I made with that
+post]({{BASE_PATH }}{% post_url 2013-06-30-First-Post %}) I made with that
 giant makefile?  Well here is my new makefile:
 
 {% highlight make %}
