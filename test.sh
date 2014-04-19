@@ -11,7 +11,7 @@ if [[ -e jekyll.log ]]; then
 	rm jekyll.log
 fi
 
-nohup jekyll serve --drafts > jekyll.log &
+nohup jekyll serve --drafts -w > jekyll.log &
 sleep 1
 grep -REiI 'Server address' jekyll.log
 
