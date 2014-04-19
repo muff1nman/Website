@@ -4,6 +4,10 @@
 	margin-top: 5px;
 }
 
+/*pre {*/
+	/*background-color: #E0EEE0;*/
+/*}*/
+
 /* posts index */
 .post > h3.title {
   position: relative;
@@ -46,7 +50,7 @@ ul.tag_box li.glyphicon.glyphicon-tags {
 .tag_box a {
   padding: 3px 6px;
   margin: 2px;
-  background: #eee;
+  background: #E0EEE0;
   color: #555;
   border-radius: 3px;
   text-decoration: none;
@@ -57,7 +61,7 @@ ul.tag_box li.glyphicon.glyphicon-tags {
   font-size: 0.8em; }
 
 .tag_box a:hover {
-  background-color: #e5e5e5; }
+  background-color: #E6EEE6; }
 
 .tag_box a.active {
   background: #57A957;
