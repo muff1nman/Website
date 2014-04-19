@@ -82,6 +82,15 @@ ul.tag_box li.glyphicon.glyphicon-tags {
 	background-color:#372D24;
 }
 
+.site-icon {
+	width: 80px;
+}
+
+.navbar-header .site-icon {
+	float: left;
+	margin-right: 5px;
+}
+
 footer p {
 	text-align: center;
 }
