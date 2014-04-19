@@ -49,6 +49,11 @@
 					<a class="navbar-brand" href="{{ HOME_PATH }}">{{ site.title }}</a>
 				</div>
 				<div class="navbar-collapse collapse">
+					<ul class="nav navbar-nav">
+						{% assign pages_list = site.pages %}
+						{% assign group = 'content' %}
+						{% include JB/pages_list %}
+					</ul>
 					<ul class="nav navbar-nav navbar-right">
 						{% assign pages_list = site.pages %}
 						{% assign group = 'navigation' %}
