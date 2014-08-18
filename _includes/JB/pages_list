@@ -35,6 +35,8 @@ Usage:
     {% endif %}
   {% endfor %}
 {% endif %}
+{% if group != null and group != "navigation" %}
 <li><a href="http://repo.andrewdemaria.com/archlinux">ArchLinux Repo</a></li>
+{% endif %}
 {% assign pages_list = nil %}
 {% assign group = nil %}
